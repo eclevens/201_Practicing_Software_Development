@@ -38,7 +38,7 @@ namespace practicingSoftwareDevelopment
             var number = Console.ReadLine();
             
             PhoneBook.Add(name, number);
-            Console.WriteLine(PhoneBook.Keys);
+           
             /* AddPerson(PhoneBook);*/
             //Delete person by nams
             //Display entire phone book
