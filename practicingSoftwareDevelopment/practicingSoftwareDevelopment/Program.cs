@@ -36,53 +36,81 @@ namespace practicingSoftwareDevelopment
 
             Console.WriteLine("Insert their number here");
             var number = Console.ReadLine();
-            
+
             PhoneBook.Add(name, number);
-           
+            if (!PhoneBook.ContainsKey(name))
+            {
+                Console.WriteLine(name + " is not found.");
+            }
+            else
+            {
+                Console.WriteLine("Action executed");
+            } }
             /* AddPerson(PhoneBook);*/
             //Delete person by nams
             //Display entire phone book
             //Search phone book by name and return result
 
 
-        }
+        
 
         //Function to addPerson() --> Mariana
         //taking user input for each field and assign to key value pairs
         //dictionary.Add() check if person already exists in dictionary. display confirmation message
         //if person does not exist, display message
-       /* public void AddPerson(string PhoneBook)
-        {
-            Console.WriteLine("Insert their name here");
-            var name = Console.ReadLine();
+/* public void AddPerson(string PhoneBook)
+ {
+     Console.WriteLine("Insert their name here");
+     var name = Console.ReadLine();
 
-            Console.WriteLine("Insert their number here");
-            var number = Console.ReadLine();
+     Console.WriteLine("Insert their number here");
+     var number = Console.ReadLine();
 
-            PhoneBook.Add(name, number);
-            Console.WriteLine(PhoneBook);
-        }*/
-       /*
-        Console.WriteLine("Insert their name here");
-        string name = Console.ReadLine();
-        Console.WriteLine("In.Add(psert their number here");
-        string number = Console.ReadLine();
-        Dictionary.Add{name, number};*/
+     PhoneBook.Add(name, number);
+     Console.WriteLine(PhoneBook);
 
-    }
-        //Function  to deletePerson() --> Mariana
-        //take user input for person to be removed
-        //dictionary.Remove() using name as key value. display confirmation message
-        //if person does not exist, display message
+if (!PhoneBook.ContainsKey(name))
+{
+    Console.WriteLine(name +" is not found.");
+}
+else{
+Console.WriteLine("Action executed");
+}
 
-        //Function to displayPhoneBook() --> Ella
-        //display a title
-        //for loop to iterate through phoneBook
-        //log the name (key)
-        //log phone number at that name (value)
+ }*/
+/*
+ Console.WriteLine("Insert their name here");
+ string name = Console.ReadLine();
+ Console.WriteLine("In.Add(psert their number here");
+ string number = Console.ReadLine();
+ Dictionary.Add{name, number};*/
 
-        //Function to searchPhoneBook() --> Jacob
-        //take user input for key
-        //display phone number at that key
-    }
+
+//Function  to deletePerson() --> Mariana
+//take user input for person to be removed
+//dictionary.Remove() using name as key value. display confirmation message
+//if person does not exist, display message
+/* public void DeletePerson(string PhoneBook)
+Console.WriteLine("choose who to delete");
+string person = Console.ReadLine();
+PhoneBook.Remove(name);
+
+if (!PhoneBook.ContainsKey(name))
+{
+Console.WriteLine(name +" is not found.");
+}
+else
+{
+Console.WriteLine("Action executed");
+}}*./
+  //Function to displayPhoneBook() --> Ella
+  //display a title
+  //for loop to iterate through phoneBook
+  //log the name (key)
+  //log phone number at that name (value)
+
+  //Function to searchPhoneBook() --> Jacob
+  //take user input for key
+  //display phone number at that key
+}
 
