@@ -45,7 +45,7 @@ namespace practicingSoftwareDevelopment
             else
             {
                 Console.WriteLine("Action executed");
-            } }
+            } } } }
             /* AddPerson(PhoneBook);*/
             //Delete person by nams
             //Display entire phone book
@@ -92,7 +92,7 @@ Console.WriteLine("Action executed");
 //if person does not exist, display message
 /* public void DeletePerson(string PhoneBook)
 Console.WriteLine("choose who to delete");
-string person = Console.ReadLine();
+string name = Console.ReadLine();
 PhoneBook.Remove(name);
 
 if (!PhoneBook.ContainsKey(name))
