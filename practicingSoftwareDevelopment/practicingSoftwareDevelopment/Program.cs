@@ -175,7 +175,7 @@ namespace practicingSoftwareDevelopment
             }
             else
             {
-                Console.WriteLine("Unable to find phone number for contact '" + nameSearch + ",' please try again.");
+                Console.WriteLine("Unable to find phone number for '" + nameSearch + ",' please try again.");
 
                 SearchPhoneBook(PhoneBook);
             }
