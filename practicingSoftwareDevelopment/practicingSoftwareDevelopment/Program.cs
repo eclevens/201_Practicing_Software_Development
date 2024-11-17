@@ -95,11 +95,16 @@ namespace practicingSoftwareDevelopment
                 string number = Console.ReadLine();
                 PhoneBook.Add(name, number);
                 Console.WriteLine(name + " is added");
+                Console.WriteLine("");
+                CommandPrompt();
+                Switcher(PhoneBook);
             }
             else
             {
-                
                 Console.WriteLine(name + " is already in your phone book");
+                Console.WriteLine("");
+                CommandPrompt();
+                Switcher(PhoneBook);
             }
 
         }
@@ -117,11 +122,17 @@ namespace practicingSoftwareDevelopment
             if (!PhoneBook.ContainsKey(name))
             {
                 Console.WriteLine(name + " is not found.");
+                Console.WriteLine("");
+                CommandPrompt();
+                Switcher(PhoneBook);
             }
             else
             {
                 PhoneBook.Remove(name);
                 Console.WriteLine(name + " removed");
+                Console.WriteLine("");
+                CommandPrompt();
+                Switcher(PhoneBook);
             }
         }
 
@@ -140,6 +151,9 @@ namespace practicingSoftwareDevelopment
                 //now display it
                 Console.WriteLine("Name: " + name + " Number: " + number);
             }
+            Console.WriteLine("");
+            CommandPrompt();
+            Switcher(PhoneBook);
         }
 
         //Function to SearchPhoneBook() --> Jacob
@@ -154,6 +168,10 @@ namespace practicingSoftwareDevelopment
             if (PhoneBook.ContainsKey(nameSearch))
             {
                 Console.WriteLine("The phone number provided for " + nameSearch + " is: {0}", PhoneBook[nameSearch]);
+
+                Console.WriteLine("");
+                CommandPrompt();
+                Switcher(PhoneBook);
             }
             else
             {
