@@ -68,7 +68,7 @@ namespace practicingSoftwareDevelopment
                     break;
 
                 case "search":
-                    //SearchPhoneBook();
+                    SearchPhoneBook(PhoneBook);
                     break;
 
                 default:
@@ -133,6 +133,23 @@ namespace practicingSoftwareDevelopment
         //Function to SearchPhoneBook() --> Jacob
         //take user input for key
         //display phone number at that key
+        static void SearchPhoneBook(Dictionary<string, string> PhoneBook)
+        {
+            Console.WriteLine("Type a name to search for that contact's phone number (case sensitive).");
+
+            string nameSearch = Console.ReadLine();
+
+            if (PhoneBook.ContainsKey(nameSearch))
+            {
+                Console.WriteLine("The phone number provided for " + nameSearch + " is: {0}", PhoneBook[nameSearch]);
+            }
+            else
+            {
+                Console.WriteLine("Unable to find phone number for contact '" + nameSearch + ",' please try again.");
+
+                SearchPhoneBook(PhoneBook);
+            }
+        }
     }
 }
 
