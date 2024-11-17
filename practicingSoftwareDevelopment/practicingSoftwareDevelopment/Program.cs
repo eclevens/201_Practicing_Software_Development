@@ -24,6 +24,7 @@ namespace practicingSoftwareDevelopment
             var PhoneBook = new Dictionary<string, string>
             {
                 { "Olivia", "(518) 925-9554" },
+                { "Ella", "(302) 723-4323" }
             };
 
 
@@ -64,7 +65,7 @@ namespace practicingSoftwareDevelopment
                     break;
 
                 case "view":
-                    //DisplayPhoneBook(PhoneBook);
+                    DisplayPhoneBook(PhoneBook);
                     break;
 
                 case "search":
@@ -129,6 +130,17 @@ namespace practicingSoftwareDevelopment
         //for loop to iterate through phoneBook
         //log the name (key)
         //log phone number at that name (value)
+        static void DisplayPhoneBook(Dictionary<string, string> PhoneBook)
+        {
+            Console.WriteLine("Viewing complete phonebook.");
+            foreach (var entry in PhoneBook)
+            {
+                string name = entry.Key; //get name
+                string number = entry.Value; //get number
+                //now display it
+                Console.WriteLine("Name: " + name + " Number: " + number);
+            }
+        }
 
         //Function to SearchPhoneBook() --> Jacob
         //take user input for key
